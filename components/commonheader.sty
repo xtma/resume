@@ -4,12 +4,12 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{fontspec}
-\usepackage{fontawesome}
+% \usepackage{fontawesome}  % Commented out - not currently used
 \usepackage{bbding}
 \usepackage{import}
 \usepackage{emoji}
-\usepackage{fontawesome}
-\usepackage{xcolor}
+% \usepackage{fontawesome}  % Duplicate - removed
+% \usepackage{xcolor}  % Already imported above
 \usepackage{tcolorbox}
 \usepackage{multicol}
 
@@ -24,8 +24,9 @@
 
 \definecolor{highlight}{RGB}{0,0,0}
 
-\newcommand{\github}{\textcolor{rgb:red,110;green,84;blue,148}{\faGithubSquare}}
-\newcommand{\linkedin}{\textcolor{rgb:red,6;green,108;blue,170}{\faLinkedinSquare}}
+% FontAwesome commands - uncomment if fontawesome package is installed
+% \newcommand{\github}{\textcolor{rgb:red,110;green,84;blue,148}{\faGithubSquare}}
+% \newcommand{\linkedin}{\textcolor{rgb:red,6;green,108;blue,170}{\faLinkedinSquare}}
 % \newcommand{\name}[1]{\begin{center}\section*{\LARGE \color{highlight} #1}\vspace{-0.8cm}\end{center}}
 \newcommand{\name}[1]{\begin{center}\section*{\LARGE \textcolor{highlight}{#1} \textcolor{gray}{| Curriculum Vitae} } \end{center}}
 \newcommand{\topinfo}[1]{\begin{center}\vspace{-0.1cm}#1\vspace{-0.2cm}\end{center}}
